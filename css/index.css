@@ -1,0 +1,46 @@
+.title {
+    color: white;
+    font-family: 'Tempus Sans ITC';
+}
+
+body {
+    background-color: rgb(59, 92, 51);
+}
+
+#container {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin: 12px auto;
+    padding: 20px;
+    border-radius: 2px;
+    width: 350px;
+    background-color: hsl(56, 82%, 89%);
+}
+
+button {
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    background-color: darkseagreen;
+    border-radius: 6px;
+}
+
+.countway {
+    margin: 6px 12px;
+    border-radius: 4px;
+    background-color: rgb(236, 176, 176);
+}
+
+#info {
+    display: inline-block;
+    text-align: left;
+    margin: 6px auto;
+}
+
+#reset {
+    background-color: firebrick;
+    color: white;
+}

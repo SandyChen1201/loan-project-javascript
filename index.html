@@ -5,41 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>貸款計算機</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <h1>LOAN Caculator</h1>
-    <form>
-        <label for="amount">貸款金額(萬)</label>
-        <input type="number" name="amount" id="amount" value="10"><br>
-        <label for="year">貸款年限</label>
-        <select name="year" id="year">
-            <option value="1">1年</option>
-            <option value="3" selected>3年</option>
-            <option value="5">5年</option>
-            <option value="7">7年</option>
-            <option value="10">10年</option>
-            <option value="15">15年</option>
-            <option value="20">20年</option>
-            <option value="30">30年</option>
-        </select><br>
-        <label for="rate">年利率</label>
-        <input type="number" step="0.1" name="rate" id="rate" value="2">%<br>
-        <input type="checkbox" name="fee" id="fee" checked>手續費($5,000)
-        <p>
-            <label for="countway">計算方式</label>
-            <input type="radio" name="countway" id="payment1" checked>本息攤還
-            <input type="radio" name="countway" id="payment2">本金攤還
-        </p>
-        <br>
-        <button type="button">count</button>
-        <button type="button">reset</button>
+    <div id="container">
+        <h1 class="title">LOAN Caculator</h1>
+        <form>
+            <div id="info">
+                <label for="amount">Amount:</label>
+                <input type="number" name="amount" id="amount" value="10">(million)<br>
+                <label for="year">Year</label>
+                <select name="year" id="year">
+                    <option value="1">1y</option>
+                    <option value="3" selected>3y</option>
+                    <option value="5">5y</option>
+                    <option value="7">7y</option>
+                    <option value="10">10y</option>
+                    <option value="15">15y</option>
+                    <option value="20">20y</option>
+                    <option value="30">30y</option>
+                </select><br>
+                <label for="rate">Yearly Rate</label>
+                <input type="number" step="0.1" name="rate" id="rate" value="2">%<br>
+                <input type="checkbox" name="fee" id="fee" checked>FEE($5,000)
+                <div class="countway">
+                    <p>
+                        <label for="countway" style="font-family:'Tempus Sans ITC';"> <b>Count
+                                Way:</b></label><br>
+                        &nbsp;<input type="radio" name="countway" id="payment1" checked>Principal Payment
+                        &nbsp;<input type="radio" name="countway" id="payment2">Interest Payment
+                    </p>
+                </div>
+            </div>
+            <br>
+
+            <button type="button" id="caculate">count</button>
+            <button type="button" id="reset">reset</button>
 
 
 
 
 
-    </form>
+        </form>
+    </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
