@@ -44,3 +44,14 @@ button {
     background-color: firebrick;
     color: white;
 }
+
+#result {
+    display: none;
+    background-color: coral;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding: 6px;
+    width: 200px;
+}
