@@ -55,3 +55,22 @@ button {
     padding: 6px;
     width: 200px;
 }
+
+#table {
+    text-align: center;
+    background-color: rgba(190, 224, 230, 0.938);
+    width: 70%;
+    margin: 6px auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(127, 208, 235);
+}
+
+thead th {
+    background-color: rgb(39, 99, 211);
+    border: 1px solid #6d7379;
+    font-size: 15px;
+}
